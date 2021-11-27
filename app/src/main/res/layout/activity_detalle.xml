@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="UI.Detalle">
+
+
+    <TextView
+        android:id="@+id/txtTituloDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="34dp"
+        android:text="Detalle"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivPosterDetalle"
+        android:layout_width="135dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="480dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="101dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnEnviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivPosterDetalle"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtAutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Autor" />
+
+        <TextView
+            android:id="@+id/txtPais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text= "@string/pais" />
+
+        <TextView
+            android:id="@+id/txtLenguaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lenguaje" />
+
+        <TextView
+            android:id="@+id/txtPaginas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paginas" />
+
+        <TextView
+            android:id="@+id/txtAno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Año" />
+
+        <TextView
+            android:id="@+id/txtPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio" />
+
+        <TextView
+            android:id="@+id/txtUltimoPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ultimo precio" />
+
+        <TextView
+            android:id="@+id/txtDelivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="despacho" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="336dp"
+        android:text="Consultar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
